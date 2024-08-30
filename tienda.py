@@ -63,4 +63,4 @@ def main():
         mary.atender_proveedores()
 
 if __name__ == '__main__':
-    pass
+    main()
