@@ -24,8 +24,8 @@ class Mary:
             print("Insuficiente dinero")
 
     def atender_proveedores(self):
-        cantidad = int(input("Cantidad de productos"))
-        for c in range(cantidad):
+        cantidad = int(input("Cantidad de productos: "))
+        for c in range(1, cantidad):
 
             nombre = input(f"Nombre del producto {c}: ")
             precio_sugerido = float(input("Precio sugerido: "))
@@ -42,7 +42,7 @@ def main():
     print("1 - Atender cliente")
     print("2 - Atender proveedor")
 
-    opcion = input("> ")
+    opcion = int(input("> "))
 
     if opcion == 1:
         while 1:
@@ -56,8 +56,8 @@ def main():
 
             break
         
-        d = input("Dinero: ")
-        c = True if input("Necesita cambio: ").lower == "y" else False
+        d = float(input("Dinero: "))
+        c = True if input("Necesita cambio (y/n): ").lower() == "y" else False
         mary.calcular_y_dar_cambio(d, c)
     else:
         mary.atender_proveedores()
