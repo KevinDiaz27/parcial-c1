@@ -1,3 +1,5 @@
+#Diego Samuel Reyes Moreno
+#Kevin Alexander Diaz Parada
 habitaciones = {
     'Simple': 50,
     'Doble': 80,
